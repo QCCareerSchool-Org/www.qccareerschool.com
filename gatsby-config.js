@@ -47,7 +47,7 @@ module.exports = {
     //   resolve: `gatsby-plugin-google-gtag`,
     //   options: {
     //     trackingIds: [
-    //       `UA-3632503-9`,
+    //       `UA-3632503-13`,
     //       `AW-1071836607`,
     //     ],
     //     gtagConfig: {
