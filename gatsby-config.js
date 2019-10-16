@@ -32,13 +32,14 @@ module.exports = {
       options: {
         fonts: [
           {
-            family: `Playfair Display`,
-            variants: [`400`, `500`],
+            family: `Open Sans`,
+            variants: [`300`, `600`],
             // subsets: [`latin`],
           },
           {
-            family: `Open Sans`,
-            variants: [`300`, `500`, `700`]
+            family: `Poppins`,
+            variants: [`200i`, `500`, `700`],
+            // subsets: [`latin`],
           },
         ],
       },

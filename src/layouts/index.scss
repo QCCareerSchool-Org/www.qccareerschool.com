@@ -1,23 +1,43 @@
 $theme-colors: (
   "primary": #f21c63,
   "secondary": #554dff,
-  "dark": #0f0626,
-  "light": #ededed,
-  "black": #000,
+  "gray": #9095a5,
+  "light": #f6f7fb,
+  "dark": #02003a,
 );
 
-$headings-font-family: 'Playfair Display', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$body-color: #9095a5;
+
+$font-weight-normal: 300;
+$headings-font-weight: 700;
+$font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$headings-font-family: Poppins, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
 $navbar-dark-color: rgba(255,255,255,0.8);
 $navbar-dark-toggler-border-color: rgba(255,255,255,0.9);
 
+$font-weight-bolder: 600;
+$lead-font-weight: 600;
+
 @import '~bootstrap/scss/bootstrap.scss';
 
-.btn { border-radius: 1rem }
+h1, .h1 { color: black; }
+h2, .h2 { color: #1f2938; }
+h3, .h3 { color: #596a88; }
+h4, .h4 { color: #596a88; font-weight: 400; }
+h5, .h5 { font-weight: 300; text-transform: uppercase; letter-spacing: 1px; }
+
+.text-light h1, .text-light .h1, .text-light h2, .text-light .h2, .text-light h3, .text-light .h3, .text-light h4, .text-light .h4, .text-light h5, .text-light .h5 { color: map-get($theme-colors, 'light') }
+.text-dark h1, .text-dark .h1, .text-dark h2, .text-dark .h2, .text-dark h3, .text-dark .h3, .text-dark h4, .text-dark .h4, .text-dark h5, .text-dark .h5 { color: map-get($theme-colors, 'dark') }
+
+.btn { border-radius: 1.1875rem; padding-left: 1.1875rem; padding-right: 1.1875rem; }
+.btn-lg { border-radius: 1.5rem; padding-left: 1.5rem; padding-right: 1.5rem; }
+.btn-sm { border-radius: 0.96875rem; padding-left: 0.96875rem; padding-right: 0.96875rem; }
+
+.hat { margin-bottom: 0; text-transform: uppercase; font-weight: 200; font-style: italic; }
 
 #main-nav .nav-link { text-transform: uppercase }
-
-.serif { font-family: $headings-font-family; }
 
 section { padding: 3rem 0 }
 section#first-section { padding-top: 5rem }
@@ -39,7 +59,6 @@ section#first-section { padding-top: 5rem }
 ul.no-indent, ol.no-indent { padding-inline-start: 0rem; padding-left: 1rem; }
 ul.sm-indent, ol.sm-indent { padding-inline-start: 0rem; padding-left: 1.5rem; }
 
-
 .navbar {
   transition: background-color 500ms;
 }
@@ -47,7 +66,6 @@ ul.sm-indent, ol.sm-indent { padding-inline-start: 0rem; padding-left: 1.5rem; }
 .navbar-dark .navbar-toggler {
   background-color: rgba(255,255,255,0.25)
 }
-
 
 .navbar-dark.opened {
   background-color: rgba(0, 0, 0, 0.8)
@@ -61,7 +79,7 @@ ul.sm-indent, ol.sm-indent { padding-inline-start: 0rem; padding-left: 1.5rem; }
 }
 
 .btn.caps { text-transform: uppercase; letter-spacing: 1px }
-.btn.btn-lg.caps { letter-spacing: 2px }
+.btn.btn-lg.caps { letter-spacing: 1.5px }
 
 .nav-tabs { border-bottom: 1px solid #e9ecef }
 
