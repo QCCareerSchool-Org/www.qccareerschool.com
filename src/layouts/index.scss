@@ -1,6 +1,7 @@
 $theme-colors: (
-  "primary": #e70260,
-  "darker": #202020,
+  "primary": #f21c63,
+  "secondary": #554dff,
+  "dark": #0f0626,
   "light": #ededed,
   "black": #000,
 );
@@ -11,6 +12,8 @@ $navbar-dark-color: rgba(255,255,255,0.8);
 $navbar-dark-toggler-border-color: rgba(255,255,255,0.9);
 
 @import '~bootstrap/scss/bootstrap.scss';
+
+.btn { border-radius: 1rem }
 
 #main-nav .nav-link { text-transform: uppercase }
 

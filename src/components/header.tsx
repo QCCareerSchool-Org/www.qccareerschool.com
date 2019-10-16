@@ -5,8 +5,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 
-import logoDark from '../images/q.svg';
 import logoLight from '../images/q-light.svg';
+import logoDark from '../images/q.svg';
 
 import { ScreenWidthContext } from '../providers/screen-width';
 import { ScrollPositionContext } from '../providers/scroll-position';
@@ -24,19 +24,19 @@ export const Header: React.FC<Props> = ({ className }) => {
   const maxPosition = 20;
 
   const logo = scrollPosition > maxPosition ? logoDark : logoLight;
-  const mobile = screenWidth < 992;
+  const mobile = screenWidth < 768;
 
   return (
     <Navbar
       id="main-nav"
       bg={scrollPosition > maxPosition ? 'light' : undefined}
       variant={scrollPosition > maxPosition ? undefined : 'dark'}
-      expand="lg"
+      expand="md"
       className={`${mobileMenu && mobile ? 'opened' : 'closed'} ${className}`}
     >
-      {/* <Container> */}
+      <Container>
         <Navbar.Brand href="/">
-          <img src={logo} alt="QC Makeup Academy" style={{ display: 'block', height: 20 }} />
+          <img src={logo} alt="QC Career School" style={{ display: 'block', height: 20 }} />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => { setMobileMenu(m => !m); }} />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -60,7 +60,7 @@ export const Header: React.FC<Props> = ({ className }) => {
             }
           </a>
         </Navbar.Collapse>
-      {/* </Container> */}
+      </Container>
     </Navbar>
   );
 };
