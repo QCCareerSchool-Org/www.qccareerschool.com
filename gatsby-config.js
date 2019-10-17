@@ -38,7 +38,7 @@ module.exports = {
           },
           {
             family: `Poppins`,
-            variants: [`200`, `200i`, `400`, `400i`, `700`, `700i`],
+            variants: [`200`, `200i`, `400`, `400i`, `600`, `600i`, `700`, `700i`],
             // subsets: [`latin`],
           },
         ],

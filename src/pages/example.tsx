@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 
 import Button from 'react-bootstrap/Button';
 import { Background } from '../components/background';
+import { Bar } from '../components/bar';
 import { SEO } from '../components/seo';
 import { DefaultLayout } from '../layouts/default-layout';
 
@@ -46,7 +47,7 @@ const ExamplePage = () => (
     <section className="text-light bg-gray">
       <Container>
         <h2>Light on Gray</h2>
-        <p className="lead">Lorem ipsum dolor sit amet</p>
+        <p className="lead"><strong>Lorem ipsum</strong> dolor sit amet</p>
         <p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Nam ipsum eros, lacinia sed dapibus sed, accumsan ut diam. In commodo, nisi eu ullamcorper pretium, eros felis fringilla nunc, quis laoreet urna lectus ut elit. Duis non fringilla justo. Sed quis mauris vitae massa ornare rhoncus sed eu risus. In hac habitasse platea dictumst. In nisl enim, maximus vel felis vitae, dictum efficitur ipsum. In malesuada, lacus malesuada mattis semper, tellus erat ultrices purus, gravida egestas mauris mi eget turpis. Mauris sem orci, porttitor ac nisi sit amet, varius consectetur purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean nec justo ut eros convallis ornare. Ut tincidunt arcu et congue mattis. Quisque vitae consectetur libero. Sed ac sem gravida, condimentum orci eget, efficitur turpis.</p>
         <h3>Sub Title</h3>
         <p>Phasellus ut tellus ex. Donec faucibus rhoncus convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo, elit vel sodales interdum, nulla est viverra felis, non vehicula erat velit quis metus. Donec elementum ac dui id convallis. Vivamus pellentesque erat massa, ut sodales lectus pulvinar pellentesque. Proin at elit ut urna commodo sodales. Integer non tortor maximus tortor vehicula pretium eget quis dui. Suspendisse nunc lorem, varius sed vestibulum at, maximus nec odio. Donec blandit mattis imperdiet. Suspendisse faucibus vestibulum tincidunt. Morbi vel justo sed felis fringilla egestas.</p>
@@ -62,7 +63,7 @@ const ExamplePage = () => (
     <section className="text-light bg-dark">
       <Container>
         <h2>Light on Dark</h2>
-        <p className="lead">Lorem ipsum dolor sit amet</p>
+        <p className="lead"><strong>Lorem ipsum</strong> dolor sit amet</p>
         <p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Nam ipsum eros, lacinia sed dapibus sed, accumsan ut diam. In commodo, nisi eu ullamcorper pretium, eros felis fringilla nunc, quis laoreet urna lectus ut elit. Duis non fringilla justo. Sed quis mauris vitae massa ornare rhoncus sed eu risus. In hac habitasse platea dictumst. In nisl enim, maximus vel felis vitae, dictum efficitur ipsum. In malesuada, lacus malesuada mattis semper, tellus erat ultrices purus, gravida egestas mauris mi eget turpis. Mauris sem orci, porttitor ac nisi sit amet, varius consectetur purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean nec justo ut eros convallis ornare. Ut tincidunt arcu et congue mattis. Quisque vitae consectetur libero. Sed ac sem gravida, condimentum orci eget, efficitur turpis.</p>
         <h3>Sub Title</h3>
         <p>Phasellus ut tellus ex. Donec faucibus rhoncus convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo, elit vel sodales interdum, nulla est viverra felis, non vehicula erat velit quis metus. Donec elementum ac dui id convallis. Vivamus pellentesque erat massa, ut sodales lectus pulvinar pellentesque. Proin at elit ut urna commodo sodales. Integer non tortor maximus tortor vehicula pretium eget quis dui. Suspendisse nunc lorem, varius sed vestibulum at, maximus nec odio. Donec blandit mattis imperdiet. Suspendisse faucibus vestibulum tincidunt. Morbi vel justo sed felis fringilla egestas.</p>
@@ -78,7 +79,7 @@ const ExamplePage = () => (
     <section className="text-dark bg-light">
       <Container>
         <h2>Dark on Light</h2>
-        <p className="lead">Lorem ipsum dolor sit amet</p>
+        <p className="lead"><strong>Lorem ipsum</strong> dolor sit amet</p>
         <p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Nam ipsum eros, lacinia sed dapibus sed, accumsan ut diam. In commodo, nisi eu ullamcorper pretium, eros felis fringilla nunc, quis laoreet urna lectus ut elit. Duis non fringilla justo. Sed quis mauris vitae massa ornare rhoncus sed eu risus. In hac habitasse platea dictumst. In nisl enim, maximus vel felis vitae, dictum efficitur ipsum. In malesuada, lacus malesuada mattis semper, tellus erat ultrices purus, gravida egestas mauris mi eget turpis. Mauris sem orci, porttitor ac nisi sit amet, varius consectetur purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean nec justo ut eros convallis ornare. Ut tincidunt arcu et congue mattis. Quisque vitae consectetur libero. Sed ac sem gravida, condimentum orci eget, efficitur turpis.</p>
         <h3>Sub Title</h3>
         <p>Phasellus ut tellus ex. Donec faucibus rhoncus convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo, elit vel sodales interdum, nulla est viverra felis, non vehicula erat velit quis metus. Donec elementum ac dui id convallis. Vivamus pellentesque erat massa, ut sodales lectus pulvinar pellentesque. Proin at elit ut urna commodo sodales. Integer non tortor maximus tortor vehicula pretium eget quis dui. Suspendisse nunc lorem, varius sed vestibulum at, maximus nec odio. Donec blandit mattis imperdiet. Suspendisse faucibus vestibulum tincidunt. Morbi vel justo sed felis fringilla egestas.</p>
@@ -94,7 +95,8 @@ const ExamplePage = () => (
     <section>
       <Container>
         <h2>Default</h2>
-        <p className="lead">Lorem ipsum dolor sit amet</p>
+        <p className="lead"><strong>Lorem ipsum</strong> dolor sit amet</p>
+        <Bar className="text-primary" />
         <p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Nam ipsum eros, lacinia sed dapibus sed, accumsan ut diam. In commodo, nisi eu ullamcorper pretium, eros felis fringilla nunc, quis laoreet urna lectus ut elit. Duis non fringilla justo. Sed quis mauris vitae massa ornare rhoncus sed eu risus. In hac habitasse platea dictumst. In nisl enim, maximus vel felis vitae, dictum efficitur ipsum. In malesuada, lacus malesuada mattis semper, tellus erat ultrices purus, gravida egestas mauris mi eget turpis. Mauris sem orci, porttitor ac nisi sit amet, varius consectetur purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean nec justo ut eros convallis ornare. Ut tincidunt arcu et congue mattis. Quisque vitae consectetur libero. Sed ac sem gravida, condimentum orci eget, efficitur turpis.</p>
         <h3>Sub Title</h3>
         <p>Phasellus ut tellus ex. Donec faucibus rhoncus convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo, elit vel sodales interdum, nulla est viverra felis, non vehicula erat velit quis metus. Donec elementum ac dui id convallis. Vivamus pellentesque erat massa, ut sodales lectus pulvinar pellentesque. Proin at elit ut urna commodo sodales. Integer non tortor maximus tortor vehicula pretium eget quis dui. Suspendisse nunc lorem, varius sed vestibulum at, maximus nec odio. Donec blandit mattis imperdiet. Suspendisse faucibus vestibulum tincidunt. Morbi vel justo sed felis fringilla egestas.</p>
@@ -110,7 +112,8 @@ const ExamplePage = () => (
     <section className="text-dark bg-gray">
       <Container>
         <h2>Dark on Gray</h2>
-        <p className="lead">Lorem ipsum dolor sit amet</p>
+        <p className="lead"><strong>Lorem ipsum</strong> dolor sit amet</p>
+        <Bar />
         <p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Nam ipsum eros, lacinia sed dapibus sed, accumsan ut diam. In commodo, nisi eu ullamcorper pretium, eros felis fringilla nunc, quis laoreet urna lectus ut elit. Duis non fringilla justo. Sed quis mauris vitae massa ornare rhoncus sed eu risus. In hac habitasse platea dictumst. In nisl enim, maximus vel felis vitae, dictum efficitur ipsum. In malesuada, lacus malesuada mattis semper, tellus erat ultrices purus, gravida egestas mauris mi eget turpis. Mauris sem orci, porttitor ac nisi sit amet, varius consectetur purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean nec justo ut eros convallis ornare. Ut tincidunt arcu et congue mattis. Quisque vitae consectetur libero. Sed ac sem gravida, condimentum orci eget, efficitur turpis.</p>
         <h3>Sub Title</h3>
         <p>Phasellus ut tellus ex. Donec faucibus rhoncus convallis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis commodo, elit vel sodales interdum, nulla est viverra felis, non vehicula erat velit quis metus. Donec elementum ac dui id convallis. Vivamus pellentesque erat massa, ut sodales lectus pulvinar pellentesque. Proin at elit ut urna commodo sodales. Integer non tortor maximus tortor vehicula pretium eget quis dui. Suspendisse nunc lorem, varius sed vestibulum at, maximus nec odio. Donec blandit mattis imperdiet. Suspendisse faucibus vestibulum tincidunt. Morbi vel justo sed felis fringilla egestas.</p>

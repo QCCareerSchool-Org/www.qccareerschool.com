@@ -76,7 +76,7 @@ $navbar-toggler-border-radius:      $border-radius;
 
 
 
-h1, .h1 { color: black; }
+h1, .h1 { color: black; font-weight: 600; }
 h2, .h2 { color: #1f2938; }
 h3, .h3 { color: #596a88; }
 h4, .h4 { color: #596a88; font-weight: 400; }
@@ -95,6 +95,9 @@ h5, .h5 { font-weight: 200; text-transform: uppercase; letter-spacing: 1px; }
 
 section { padding: 3rem 0 }
 section#first-section { padding-top: 8rem }
+@media (max-width: 767px) {
+  section#first-section { padding-top: 5rem }
+}
 
 .text-shadow { text-shadow: 1px 1px 2px rgba(0,0,0,.75); }
 
