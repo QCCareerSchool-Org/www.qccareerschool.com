@@ -39,7 +39,7 @@ $font-weight-bolder: 600;
  * Unchanged, but included here so the variables can be used below
  */
  $border-radius:    .25rem;
- $border-radius-lg: .3rem;
+ $border-radius-lg: .75rem;
  $border-radius-sm: .2rem;
  
 
@@ -74,6 +74,10 @@ $navbar-toggler-border-radius:      $border-radius;
 
 @import '~bootstrap/scss/bootstrap.scss';
 
+.card.rounded-lg .card-img-top {
+  border-top-left-radius: $border-radius-lg;
+  border-top-right-radius: $border-radius-lg;
+}
 
 
 h1, .h1 { color: black; }

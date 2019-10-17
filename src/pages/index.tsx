@@ -19,6 +19,8 @@ import WritingFaculties from '../images/writing-faculties-woman.jpg';
 import EventFaculties from '../images/event-faculties-table.jpg';
 import DesignFaculties from '../images/design-faculties-modern-living-room.jpg';
 import PetFacultiesWashingDog from '../images/pet-faculties-washing-dog.jpg'
+import { CourseCard } from '../components/course-card';
+import { Bar } from '../components/bar';
 
 
 const IndexPage = () => (
@@ -57,19 +59,23 @@ const IndexPage = () => (
         <Row>
 
           <Col xs="12" md="6" className="mb-4">
-            <Card className="shadow-lg rounded">
-              <Card.Img variant="top" src={MakeupFaculties} />
-              <Card.Body>
-                <Card.Title>QC Makeup Academy</Card.Title>
-                <Card.Text>
-                  Basic and advanced professional makeup artistry courses for all skill levels.
-            </Card.Text>
-                <Button variant="primary">Go somewhere</Button>
-              </Card.Body>
-            </Card>
+            <CourseCard
+              img={MakeupFaculties}
+              title="QC Makeup Academy"
+              body="Basic and advanced professional makeup artistry courses for all skill levels."
+              buttonText="Go somewhere"
+              buttonLink="http://gooogle.com"
+            />
           </Col>
 
           <Col xs="12" md="6" className="mb-4">
+            <CourseCard
+              img={EventFaculties}
+              title="QC Makeup Academy"
+              body="Basic and advanced professional makeup artistry courses for all skill levels."
+              buttonText="Go somewhere"
+              buttonLink="http://gooogle.com"
+            />
             <Card className="shadow-lg rounded">
               <Card.Img variant="top" src={EventFaculties}/>
               <Card.Body>
@@ -169,17 +175,17 @@ const IndexPage = () => (
     <section className="text-light bg-dark">
       <Container>
         <Row>
-          <Col>
+          <Col xs="12" md="4">
             <h3>Full Course Catalog</h3>
             <p>View a full list and description of training programs and courses offered by QC Career School</p>
             <Button className="caps">Normal Button</Button>
           </Col>
-          <Col>
+          <Col xs="12" md="4">
             <h3>Admissions</h3>
             <p>Interested in enrolling with QC Career School? Find out the admissions requirements and enroll here!</p>
             <Button className="caps">Normal Button</Button>
           </Col>
-          <Col>
+          <Col xs="12" md="4">
             <h3>Find Professionals</h3>
             <p>Hire a QC graduate here! Search by profession and location</p>
             <Button className="caps">Normal Button</Button>
