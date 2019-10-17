@@ -15,7 +15,7 @@ const IndexPage = () => (
       <section id="first-section" className="text-light">
         <Container>
           <p className="hat">QC Presents</p>
-          <h1 className="text-light">QC Career School</h1>
+          <h1>QC Career School</h1>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ipsum eros, lacinia sed dapibus sed, accumsan ut diam. In commodo, nisi eu ullamcorper pretium, eros felis fringilla nunc, quis laoreet urna lectus ut elit. Duis non fringilla justo. Sed quis mauris vitae massa ornare rhoncus sed eu risus. In hac habitasse platea dictumst. In nisl enim, maximus vel felis vitae, dictum efficitur ipsum. In malesuada, lacus malesuada mattis semper, tellus erat ultrices purus, gravida egestas mauris mi eget turpis. Mauris sem orci, porttitor ac nisi sit amet, varius consectetur purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean nec justo ut eros convallis ornare. Ut tincidunt arcu et congue mattis. Quisque vitae consectetur libero. Sed ac sem gravida, condimentum orci eget, efficitur turpis.</p>
           <p>Suspendisse potenti. Praesent bibendum pretium neque, quis imperdiet erat hendrerit vitae. Donec maximus ipsum et urna fermentum, nec vulputate odio gravida. Nunc commodo pulvinar ex. Ut non egestas odio. Suspendisse eget elit sollicitudin, pharetra sapien id, mattis velit. In pharetra convallis nibh a mattis. In egestas nunc non libero luctus, in porta erat gravida. Donec ut sodales dui, ut ornare ipsum. Phasellus pretium, urna ac fermentum rhoncus, ante nulla semper orci, eu pulvinar turpis metus rhoncus enim.</p>
           <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi ut dignissim ligula, a rutrum orci. Suspendisse maximus faucibus luctus. Duis commodo condimentum viverra. Duis et odio mollis, eleifend odio at, lacinia massa. Nam ultrices malesuada lacus ut porttitor. Nam mattis pharetra cursus. Vestibulum imperdiet efficitur dolor sed eleifend. Quisque sodales purus nunc. Donec dignissim pretium interdum. Proin a porta quam, vitae dignissim justo. Morbi et hendrerit erat, luctus elementum erat. Aenean dignissim est eu lorem accumsan, vel commodo justo lobortis. Ut risus quam, finibus quis nibh eu, maximus sodales sapien. Aliquam semper leo ut turpis tristique sodales.</p>
@@ -26,81 +26,11 @@ const IndexPage = () => (
 
     <section>
       <Container>
-        <h1>This is an H1</h1>
-        <h2>This is an H2</h2>
-        <h3>This is an H3</h3>
-        <h4>This is an H4</h4>
-        <h5>This is an H5</h5>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ipsum eros, lacinia sed dapibus sed, accumsan ut diam. In commodo, nisi eu ullamcorper pretium, eros felis fringilla nunc, quis laoreet urna lectus ut elit. Duis non fringilla justo. Sed quis mauris vitae massa ornare rhoncus sed eu risus. In hac habitasse platea dictumst. In nisl enim, maximus vel felis vitae, dictum efficitur ipsum. In malesuada, lacus malesuada mattis semper, tellus erat ultrices purus, gravida egestas mauris mi eget turpis. Mauris sem orci, porttitor ac nisi sit amet, varius consectetur purus.</p>
-        <p className="lead">This is a lead paragraph</p>
-        <Button>Normal Button</Button>
-        <br />
-        <br />
-        <Button className="caps">Normal Button</Button>
-        <br />
-        <br />
-        <Button size="lg">Large Button</Button>
-        <br />
-        <br />
-        <Button size="lg" className="caps">Large Button</Button>
-        <br />
-        <br />
-        <Button size="sm">Small Button</Button>
-        <br />
-        <br />
-        <Button size="sm" className="caps">Small Button</Button>
-        <br />
-        <br />
-      </Container>
-    </section>
-
-    <section className="text-light bg-gray">
-      <Container>
-        <h2>Light on Gray</h2>
-        <p className="lead">Lorem ipsum dolor sit amet</p>
-        <p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Nam ipsum eros, lacinia sed dapibus sed, accumsan ut diam. In commodo, nisi eu ullamcorper pretium, eros felis fringilla nunc, quis laoreet urna lectus ut elit. Duis non fringilla justo. Sed quis mauris vitae massa ornare rhoncus sed eu risus. In hac habitasse platea dictumst. In nisl enim, maximus vel felis vitae, dictum efficitur ipsum. In malesuada, lacus malesuada mattis semper, tellus erat ultrices purus, gravida egestas mauris mi eget turpis. Mauris sem orci, porttitor ac nisi sit amet, varius consectetur purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean nec justo ut eros convallis ornare. Ut tincidunt arcu et congue mattis. Quisque vitae consectetur libero. Sed ac sem gravida, condimentum orci eget, efficitur turpis.</p>
+        <h2>QC Career School</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ipsum eros, lacinia sed dapibus sed, accumsan ut diam. In commodo, nisi eu ullamcorper pretium, eros felis fringilla nunc, quis laoreet urna lectus ut elit. Duis non fringilla justo. Sed quis mauris vitae massa ornare rhoncus sed eu risus. In hac habitasse platea dictumst. In nisl enim, maximus vel felis vitae, dictum efficitur ipsum. In malesuada, lacus malesuada mattis semper, tellus erat ultrices purus, gravida egestas mauris mi eget turpis. Mauris sem orci, porttitor ac nisi sit amet, varius consectetur purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean nec justo ut eros convallis ornare. Ut tincidunt arcu et congue mattis. Quisque vitae consectetur libero. Sed ac sem gravida, condimentum orci eget, efficitur turpis.</p>
         <p>Suspendisse potenti. Praesent bibendum pretium neque, quis imperdiet erat hendrerit vitae. Donec maximus ipsum et urna fermentum, nec vulputate odio gravida. Nunc commodo pulvinar ex. Ut non egestas odio. Suspendisse eget elit sollicitudin, pharetra sapien id, mattis velit. In pharetra convallis nibh a mattis. In egestas nunc non libero luctus, in porta erat gravida. Donec ut sodales dui, ut ornare ipsum. Phasellus pretium, urna ac fermentum rhoncus, ante nulla semper orci, eu pulvinar turpis metus rhoncus enim.</p>
         <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi ut dignissim ligula, a rutrum orci. Suspendisse maximus faucibus luctus. Duis commodo condimentum viverra. Duis et odio mollis, eleifend odio at, lacinia massa. Nam ultrices malesuada lacus ut porttitor. Nam mattis pharetra cursus. Vestibulum imperdiet efficitur dolor sed eleifend. Quisque sodales purus nunc. Donec dignissim pretium interdum. Proin a porta quam, vitae dignissim justo. Morbi et hendrerit erat, luctus elementum erat. Aenean dignissim est eu lorem accumsan, vel commodo justo lobortis. Ut risus quam, finibus quis nibh eu, maximus sodales sapien. Aliquam semper leo ut turpis tristique sodales.</p>
-      </Container>
-    </section>
-
-    <section className="text-light bg-dark">
-      <Container>
-        <h2>Light on Dark</h2>
-        <p className="lead">Lorem ipsum dolor sit amet</p>
-        <p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Nam ipsum eros, lacinia sed dapibus sed, accumsan ut diam. In commodo, nisi eu ullamcorper pretium, eros felis fringilla nunc, quis laoreet urna lectus ut elit. Duis non fringilla justo. Sed quis mauris vitae massa ornare rhoncus sed eu risus. In hac habitasse platea dictumst. In nisl enim, maximus vel felis vitae, dictum efficitur ipsum. In malesuada, lacus malesuada mattis semper, tellus erat ultrices purus, gravida egestas mauris mi eget turpis. Mauris sem orci, porttitor ac nisi sit amet, varius consectetur purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean nec justo ut eros convallis ornare. Ut tincidunt arcu et congue mattis. Quisque vitae consectetur libero. Sed ac sem gravida, condimentum orci eget, efficitur turpis.</p>
-        <p>Suspendisse potenti. Praesent bibendum pretium neque, quis imperdiet erat hendrerit vitae. Donec maximus ipsum et urna fermentum, nec vulputate odio gravida. Nunc commodo pulvinar ex. Ut non egestas odio. Suspendisse eget elit sollicitudin, pharetra sapien id, mattis velit. In pharetra convallis nibh a mattis. In egestas nunc non libero luctus, in porta erat gravida. Donec ut sodales dui, ut ornare ipsum. Phasellus pretium, urna ac fermentum rhoncus, ante nulla semper orci, eu pulvinar turpis metus rhoncus enim.</p>
-        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi ut dignissim ligula, a rutrum orci. Suspendisse maximus faucibus luctus. Duis commodo condimentum viverra. Duis et odio mollis, eleifend odio at, lacinia massa. Nam ultrices malesuada lacus ut porttitor. Nam mattis pharetra cursus. Vestibulum imperdiet efficitur dolor sed eleifend. Quisque sodales purus nunc. Donec dignissim pretium interdum. Proin a porta quam, vitae dignissim justo. Morbi et hendrerit erat, luctus elementum erat. Aenean dignissim est eu lorem accumsan, vel commodo justo lobortis. Ut risus quam, finibus quis nibh eu, maximus sodales sapien. Aliquam semper leo ut turpis tristique sodales.</p>
-      </Container>
-    </section>
-
-    <section className="text-dark bg-light">
-      <Container>
-        <h2>Dark on Light</h2>
-        <p className="lead">Lorem ipsum dolor sit amet</p>
-        <p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Nam ipsum eros, lacinia sed dapibus sed, accumsan ut diam. In commodo, nisi eu ullamcorper pretium, eros felis fringilla nunc, quis laoreet urna lectus ut elit. Duis non fringilla justo. Sed quis mauris vitae massa ornare rhoncus sed eu risus. In hac habitasse platea dictumst. In nisl enim, maximus vel felis vitae, dictum efficitur ipsum. In malesuada, lacus malesuada mattis semper, tellus erat ultrices purus, gravida egestas mauris mi eget turpis. Mauris sem orci, porttitor ac nisi sit amet, varius consectetur purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean nec justo ut eros convallis ornare. Ut tincidunt arcu et congue mattis. Quisque vitae consectetur libero. Sed ac sem gravida, condimentum orci eget, efficitur turpis.</p>
-        <p>Suspendisse potenti. Praesent bibendum pretium neque, quis imperdiet erat hendrerit vitae. Donec maximus ipsum et urna fermentum, nec vulputate odio gravida. Nunc commodo pulvinar ex. Ut non egestas odio. Suspendisse eget elit sollicitudin, pharetra sapien id, mattis velit. In pharetra convallis nibh a mattis. In egestas nunc non libero luctus, in porta erat gravida. Donec ut sodales dui, ut ornare ipsum. Phasellus pretium, urna ac fermentum rhoncus, ante nulla semper orci, eu pulvinar turpis metus rhoncus enim.</p>
-        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi ut dignissim ligula, a rutrum orci. Suspendisse maximus faucibus luctus. Duis commodo condimentum viverra. Duis et odio mollis, eleifend odio at, lacinia massa. Nam ultrices malesuada lacus ut porttitor. Nam mattis pharetra cursus. Vestibulum imperdiet efficitur dolor sed eleifend. Quisque sodales purus nunc. Donec dignissim pretium interdum. Proin a porta quam, vitae dignissim justo. Morbi et hendrerit erat, luctus elementum erat. Aenean dignissim est eu lorem accumsan, vel commodo justo lobortis. Ut risus quam, finibus quis nibh eu, maximus sodales sapien. Aliquam semper leo ut turpis tristique sodales.</p>
-      </Container>
-    </section>
-
-    <section>
-      <Container>
-        <h2>Default</h2>
-        <p className="lead">Lorem ipsum dolor sit amet</p>
-        <p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Nam ipsum eros, lacinia sed dapibus sed, accumsan ut diam. In commodo, nisi eu ullamcorper pretium, eros felis fringilla nunc, quis laoreet urna lectus ut elit. Duis non fringilla justo. Sed quis mauris vitae massa ornare rhoncus sed eu risus. In hac habitasse platea dictumst. In nisl enim, maximus vel felis vitae, dictum efficitur ipsum. In malesuada, lacus malesuada mattis semper, tellus erat ultrices purus, gravida egestas mauris mi eget turpis. Mauris sem orci, porttitor ac nisi sit amet, varius consectetur purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean nec justo ut eros convallis ornare. Ut tincidunt arcu et congue mattis. Quisque vitae consectetur libero. Sed ac sem gravida, condimentum orci eget, efficitur turpis.</p>
-        <p>Suspendisse potenti. Praesent bibendum pretium neque, quis imperdiet erat hendrerit vitae. Donec maximus ipsum et urna fermentum, nec vulputate odio gravida. Nunc commodo pulvinar ex. Ut non egestas odio. Suspendisse eget elit sollicitudin, pharetra sapien id, mattis velit. In pharetra convallis nibh a mattis. In egestas nunc non libero luctus, in porta erat gravida. Donec ut sodales dui, ut ornare ipsum. Phasellus pretium, urna ac fermentum rhoncus, ante nulla semper orci, eu pulvinar turpis metus rhoncus enim.</p>
-        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi ut dignissim ligula, a rutrum orci. Suspendisse maximus faucibus luctus. Duis commodo condimentum viverra. Duis et odio mollis, eleifend odio at, lacinia massa. Nam ultrices malesuada lacus ut porttitor. Nam mattis pharetra cursus. Vestibulum imperdiet efficitur dolor sed eleifend. Quisque sodales purus nunc. Donec dignissim pretium interdum. Proin a porta quam, vitae dignissim justo. Morbi et hendrerit erat, luctus elementum erat. Aenean dignissim est eu lorem accumsan, vel commodo justo lobortis. Ut risus quam, finibus quis nibh eu, maximus sodales sapien. Aliquam semper leo ut turpis tristique sodales.</p>
-      </Container>
-    </section>
-
-    <section className="text-dark bg-gray">
-      <Container>
-        <h2>Dark on Gray</h2>
-        <p className="lead">Lorem ipsum dolor sit amet</p>
-        <p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit</strong>. Nam ipsum eros, lacinia sed dapibus sed, accumsan ut diam. In commodo, nisi eu ullamcorper pretium, eros felis fringilla nunc, quis laoreet urna lectus ut elit. Duis non fringilla justo. Sed quis mauris vitae massa ornare rhoncus sed eu risus. In hac habitasse platea dictumst. In nisl enim, maximus vel felis vitae, dictum efficitur ipsum. In malesuada, lacus malesuada mattis semper, tellus erat ultrices purus, gravida egestas mauris mi eget turpis. Mauris sem orci, porttitor ac nisi sit amet, varius consectetur purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean nec justo ut eros convallis ornare. Ut tincidunt arcu et congue mattis. Quisque vitae consectetur libero. Sed ac sem gravida, condimentum orci eget, efficitur turpis.</p>
-        <p>Suspendisse potenti. Praesent bibendum pretium neque, quis imperdiet erat hendrerit vitae. Donec maximus ipsum et urna fermentum, nec vulputate odio gravida. Nunc commodo pulvinar ex. Ut non egestas odio. Suspendisse eget elit sollicitudin, pharetra sapien id, mattis velit. In pharetra convallis nibh a mattis. In egestas nunc non libero luctus, in porta erat gravida. Donec ut sodales dui, ut ornare ipsum. Phasellus pretium, urna ac fermentum rhoncus, ante nulla semper orci, eu pulvinar turpis metus rhoncus enim.</p>
-        <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi ut dignissim ligula, a rutrum orci. Suspendisse maximus faucibus luctus. Duis commodo condimentum viverra. Duis et odio mollis, eleifend odio at, lacinia massa. Nam ultrices malesuada lacus ut porttitor. Nam mattis pharetra cursus. Vestibulum imperdiet efficitur dolor sed eleifend. Quisque sodales purus nunc. Donec dignissim pretium interdum. Proin a porta quam, vitae dignissim justo. Morbi et hendrerit erat, luctus elementum erat. Aenean dignissim est eu lorem accumsan, vel commodo justo lobortis. Ut risus quam, finibus quis nibh eu, maximus sodales sapien. Aliquam semper leo ut turpis tristique sodales.</p>
+        <Button size="sm">sdsds</Button>
       </Container>
     </section>
 

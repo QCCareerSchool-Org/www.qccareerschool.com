@@ -5,7 +5,7 @@ interface Props {
 }
 
 export const Footer: React.FC<Props> = ({ className }) => (
-  <footer className={`bg-black text-light py-4 ${className}`}>
+  <footer className={`bg-dark text-light py-4 ${className}`}>
     <div className="container">
       <small>&copy; {new Date().getFullYear()} QC Career School</small>
     </div>

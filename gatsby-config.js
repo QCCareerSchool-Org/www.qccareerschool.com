@@ -33,12 +33,12 @@ module.exports = {
         fonts: [
           {
             family: `Open Sans`,
-            variants: [`300`, `600`],
+            variants: [`300`, `300i`, `600`, `600i`],
             // subsets: [`latin`],
           },
           {
             family: `Poppins`,
-            variants: [`200i`, `500`, `700`],
+            variants: [`200`, `200i`, `400`, `400i`, `700`, `700i`],
             // subsets: [`latin`],
           },
         ],
