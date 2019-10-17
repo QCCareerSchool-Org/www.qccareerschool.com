@@ -18,26 +18,29 @@ import TravelFaculties from '../images/travel-faculties-woman-hiking.jpeg';
 import WritingFaculties from '../images/writing-faculties-woman.jpg';
 import EventFaculties from '../images/event-faculties-table.jpg';
 import DesignFaculties from '../images/design-faculties-modern-living-room.jpg';
+import PetFacultiesWashingDog from '../images/pet-faculties-washing-dog.jpg'
 
 
 const IndexPage = () => (
   <DefaultLayout>
     <SEO title="Home" />
 
-    <Background image="applyingLipGloss">
+    <Background image="home" overlay={[ 'linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45))',  ]}>
       <section id="first-section" className="text-light">
+        <div className="my-5">
         <Container>
-          <Col xs="12" md="8" lg="6" className="offset-md-1 mb-4 mb-lg-0">
+          <Col xs="12" md="10" lg="7" className="offset-md-1 mb-lg-0">
             <p className="hat">QC Career School</p>
-            <h1 className="display-4 text-light; text size">Providing Quality Distance Education for 35 Years and Counting</h1>
+            <h1 className="text-shadow">Providing Quality Distance Education for 35 Years and Counting</h1>
           </Col>
         </Container>
+        </div>
       </section>
     </Background>
 
     <section>
       <Container className="text-center">
-        <Col xs="12" md="8" lg="6" className="offset-md-2 offset-lg-3 mb-2 mb-lg-2">
+        <Col xs="12" md="8" lg="8" className="offset-md-2 offset-lg-2 mb-2 mb-lg-2 mt-4">
           <h2 className="text-center">Welcome to QC Career School!</h2>
           <p className="lead">Lorem ipsum dolor sit amet</p>
           <p>QC is a leader in online distance education. With eight faculties and courses available around the globe, QC offers affordable and convenient career training in a variety of professional fields.  With QC’s unparalleled student support, professional tutors, and unique online learning system based on direct feedback, you’ll graduate with the skills and confidence you need to start a successful professional career!</p>
@@ -46,10 +49,10 @@ const IndexPage = () => (
     </section>
 
 
-    <section className="text-dark bg-light">
+    <section className="text-dark bg-light mt-5 text-center">
       <Container>
         <h2>QC Career School Faculties</h2>
-        <p className="lead">Lorem ipsum dolor sit amet</p>
+        <p className="lead mb-5">Lorem ipsum dolor sit amet</p>
 
         <Row>
 
@@ -165,8 +168,6 @@ const IndexPage = () => (
 
     <section className="text-light bg-dark">
       <Container>
-        <h2 className="text-center">Light on Dark</h2>
-        <p className="lead; text-center">Lorem ipsum dolor sit amet</p>
         <Row>
           <Col>
             <h3>Full Course Catalog</h3>
