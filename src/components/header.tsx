@@ -8,6 +8,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import logoLight from '../images/q-light.svg';
 import logoDark from '../images/q.svg';
 
+import { Link } from 'gatsby';
 import { ScreenWidthContext } from '../providers/screen-width';
 import { ScrollPositionContext } from '../providers/scroll-position';
 
@@ -36,22 +37,22 @@ export const Header: React.FC<Props> = ({ className }) => {
     >
       <Container>
         <div id="nav-wrapper">
-          <Navbar.Brand href="/">
-            <img src={logo} alt="QC Career School" style={{ display: 'block', height: 20 }} />
+          <Navbar.Brand>
+            <Link to="/"><img src={logo} alt="QC Career School" style={{ display: 'block', height: 20 }} /></Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => { setMobileMenu(m => !m); }} />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ml-auto mr-3">
               <NavDropdown title="Programs" id="basic-nav-dropdown">
-                <NavDropdown.Item href="/programs/">Overview</NavDropdown.Item>
+                <Link to="/programs/" className="dropdown-item">Overview</Link>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/programs/#makeup-artistry">Makeup Artistry</NavDropdown.Item>
-                <NavDropdown.Item href="/programs/#interior-decorating">Interior Decorating</NavDropdown.Item>
-                <NavDropdown.Item href="/programs/#event-planning">Event Planning</NavDropdown.Item>
-                <NavDropdown.Item href="/programs/#dog-grooming">Dog Grooming</NavDropdown.Item>
+                <Link to="/programs/#makeup-artistry" className="dropdown-item">Makeup Artistry</Link>
+                <Link to="/programs/#interior-decorating" className="dropdown-item">Interior Decorating</Link>
+                <Link to="/programs/#event-planning" className="dropdown-item">Event Planning</Link>
+                <Link to="/programs/#dog-grooming" className="dropdown-item">Dog Grooming</Link>
               </NavDropdown>
-              <Nav.Link href="/admissions/">Admissions</Nav.Link>
-              <Nav.Link href="/contact/">Contact</Nav.Link>
+              <Link to="/admissions/" data-rb-event-key="/admissions/" className="nav-link">Admissions</Link>
+              <Link to="/contact/" data-rb-event-key="/contact/" className="nav-link">Contact</Link>
             </Nav>
             <a href="https://enroll.qcmakeupacademy.com">
               {mobile
