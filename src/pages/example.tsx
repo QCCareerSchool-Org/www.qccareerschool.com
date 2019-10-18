@@ -16,7 +16,7 @@ const ExamplePage = () => (
   <DefaultLayout>
     <SEO title="Home" />
 
-    <Background image="applyingLipGloss">
+    <Background image="home">
       <section id="first-section" className="text-light">
         <Container>
           <p className="hat">QC Presents</p>
@@ -68,6 +68,10 @@ const ExamplePage = () => (
             </Card>
           </Col>
         </Row>
+
+        <PriceBox courses={[ 'st', 'hs', 'mz' ]} />
+        <PriceBox courses={[ 'pf' ]} />
+        <PriceBox courses={[ 'hs' ]} />
 
       </Container>
     </section>
