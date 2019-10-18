@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "QC Career School <administrator@qccareerschool.com>",
   "dependencies": {
+    "@types/big.js": "^4.0.5",
     "@types/react-helmet": "^5.0.12",
     "axios": "^0.19.0",
     "big.js": "^5.2.2",

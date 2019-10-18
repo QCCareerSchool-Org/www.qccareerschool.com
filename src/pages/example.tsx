@@ -1,9 +1,13 @@
 import React from 'react';
-import Container from 'react-bootstrap/Container';
-
 import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+
 import { Background } from '../components/background';
 import { Bar } from '../components/bar';
+import { PriceBox } from '../components/price-box';
 import { SEO } from '../components/seo';
 import { DefaultLayout } from '../layouts/default-layout';
 
@@ -41,6 +45,28 @@ const ExamplePage = () => (
         <br />
         <br />
         <Button size="sm">Small Button</Button>
+        <br />
+        <br />
+
+        <Row>
+          <Col xs="12" md="6">
+            <Card>
+              <Card.Body>
+                <Card.Title>Master Makeup Artistry</Card.Title>
+                <PriceBox courses={[ 'mz' ]} />
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col xs="12" md="6">
+            <Card>
+              <Card.Body>
+                <Card.Title>Interior Decorating</Card.Title>
+                <PriceBox courses={[ 'i2' ]} />
+              </Card.Body>
+            </Card>
+          </Col>
+        </Row>
+
       </Container>
     </section>
 
