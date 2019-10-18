@@ -28,16 +28,16 @@ const IndexPage = () => (
   <DefaultLayout>
     <SEO title="Home" />
 
-    <Background image="home" overlay={[ 'linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45))',  ]}>
+    <Background image="home" overlay={[ 'linear-gradient(rgba(0, 0, 0, .45), rgba(0, 0, 0, .45))' ]}>
       <section id="first-section" className="text-light">
         <div className="my-5">
-        <Container>
-          <Col xs="12" md="10" lg="7" className="offset-md-1 mb-lg-0">
-            <p className="hat">QC Career School</p>
-            <h1 className="text-shadow">Providing Quality Distance Education for 35 Years and Counting</h1>
-            <Bar className="text-secondary" />
-          </Col>
-        </Container>
+          <Container>
+            <Col xs="12" md="10" lg="7" className="offset-md-1 mb-lg-0">
+              <p className="hat">QC Career School</p>
+              <h1 className="text-shadow">Providing Quality Distance Education for 35 Years and Counting</h1>
+              <Bar className="text-secondary" />
+            </Col>
+          </Container>
         </div>
       </section>
     </Background>
@@ -56,10 +56,9 @@ const IndexPage = () => (
 
     <section className="text-dark bg-light mt-5">
       <Container>
-       <h2>QC Career School Faculties</h2>
-          <p className="lead">Lorem ipsum dolor sit amet</p>
-            <Bar className="text-primary mb-5"/>
-        
+        <h2>QC Career School Faculties</h2>
+        <p className="lead">Lorem ipsum dolor sit amet</p>
+        <Bar className="text-primary mb-5" />
 
         <Row>
 
@@ -142,29 +141,26 @@ const IndexPage = () => (
               buttonLink="http://gooogle.com"
             />
           </Col>
-          
-  
+
         </Row>
 
       </Container>
     </section>
 
-
-
     <section className="text-light bg-dark">
       <Container className="my-5">
         <Row>
-          <Col xs="12" md="4"className="mb-5">
+          <Col xs="12" md="4" className="mb-5">
             <h3 className="mb-3">Full Course<br></br> Catalog</h3>
             <p>View a full list and description of training programs and courses offered by QC Career School</p>
             <Button size="sm" className="caps">Normal Button</Button>
           </Col>
-          <Col xs="12" md="4"className="mb-5">
+          <Col xs="12" md="4" className="mb-5">
             <h3 className="mb-3">Admission<br></br> Requirements</h3>
             <p>Interested in enrolling with QC Career School? Find out the admissions requirements and enroll here!</p>
             <Button size="sm" className="caps" mb-4>Normal Button</Button>
           </Col>
-          <Col xs="12" md="4"className="mb-5">
+          <Col xs="12" md="4" className="mb-5">
             <h3 className="mb-3">Find<br></br> Professionals</h3>
             <p>Hire a QC graduate here! Search by profession and location</p>
             <Button size="sm" className="caps" mb-4>Normal Button</Button>
@@ -172,8 +168,6 @@ const IndexPage = () => (
         </Row>
       </Container>
     </section>
-
-    
 
   </DefaultLayout>
 );
