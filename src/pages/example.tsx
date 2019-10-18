@@ -69,6 +69,10 @@ const ExamplePage = () => (
           </Col>
         </Row>
 
+        <PriceBox courses={[ 'st', 'hs', 'mz' ]} />
+        <PriceBox courses={[ 'pf' ]} />
+        <PriceBox courses={[ 'hs' ]} />
+
       </Container>
     </section>
 

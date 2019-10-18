@@ -38,7 +38,7 @@ export const Header: React.FC<Props> = ({ className }) => {
       <Container>
         <div id="nav-wrapper">
           <Navbar.Brand>
-            <Link to="/"><img src={logo} alt="QC Career School" style={{ display: 'block', height: 20 }} /></Link>
+            <Link to="/"><img src={logo} alt="QC Career School" style={{ display: 'block', height: 40 }} /></Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={() => { setMobileMenu(m => !m); }} />
           <Navbar.Collapse id="basic-navbar-nav">
