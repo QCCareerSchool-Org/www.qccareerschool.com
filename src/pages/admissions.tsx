@@ -8,7 +8,7 @@ import { Background } from '../components/background';
 
 const AdmissionsPage: React.FC = () => (
   <DefaultLayout>
-    <Background image="applyingLipGloss">
+    <Background image="home">
       <section id="first-section" className="text-light">
         <Container>
           <h1>Admissions</h1>

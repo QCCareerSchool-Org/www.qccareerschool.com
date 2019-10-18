@@ -63,7 +63,7 @@ const IndexPage = () => (
 
         <Row>
 
-          <Col xs="12" md="6" className="mb-4">
+          <Col xs="12" md="6" className="mb-4 d-flex">
             <CourseCard
               img={MakeupFaculties}
               title="QC Makeup Academy"
@@ -73,7 +73,7 @@ const IndexPage = () => (
             />
           </Col>
 
-          <Col xs="12" md="6" className="mb-4">
+          <Col xs="12" md="6" className="mb-4 d-flex">
             <CourseCard
               img={EventFaculties}
               title="QC Event School "
@@ -83,7 +83,7 @@ const IndexPage = () => (
             />
           </Col>
 
-          <Col xs="12" md="6" className="mb-4">
+          <Col xs="12" md="6" className="mb-4 d-flex">
             <CourseCard
               img={DesignFaculties}
               title="QC Design School "
@@ -93,7 +93,7 @@ const IndexPage = () => (
             />
           </Col>
 
-          <Col xs="12" md="6" className="mb-4">
+          <Col xs="12" md="6" className="mb-4 d-flex">
             <CourseCard
               img={PetFaculties}
               title="QC Pet Studies "
@@ -103,7 +103,7 @@ const IndexPage = () => (
             />
           </Col>
 
-          <Col xs="12" md="6" className="mb-4">
+          <Col xs="12" md="6" className="mb-4 d-flex">
             <CourseCard
               img={WellnessFaculties}
               title="QC Wellness Studies "
@@ -113,7 +113,7 @@ const IndexPage = () => (
             />
           </Col>
 
-          <Col xs="12" md="6" className="mb-4">
+          <Col xs="12" md="6" className="mb-4 d-flex">
             <CourseCard
               img={StyleFaculties}
               title="QC Style Academy"
@@ -123,7 +123,7 @@ const IndexPage = () => (
             />
           </Col>
 
-          <Col xs="12" md="6" className="mb-4">
+          <Col xs="12" md="6" className="mb-4 d-flex">
             <CourseCard
               img={TravelFaculties}
               title="QC Travel School "
@@ -133,7 +133,7 @@ const IndexPage = () => (
             />
           </Col>
 
-          <Col xs="12" md="6" className="mb-4">
+          <Col xs="12" md="6" className="mb-4 d-flex">
             <CourseCard
               img={WritingFaculties}
               title="Winghill Writing School"

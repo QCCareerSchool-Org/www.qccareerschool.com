@@ -8,7 +8,7 @@ import { Background } from '../components/background';
 
 const ContactPage: React.FC = () => (
   <DefaultLayout>
-    <Background image="applyingLipGloss">
+    <Background image="home">
       <section id="first-section" className="text-light">
         <Container>
           <h1>Contact</h1>

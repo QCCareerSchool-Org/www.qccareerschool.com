@@ -15,7 +15,7 @@ export const CourseCard: React.FC<Props> = ({ img, title, body, buttonText, butt
   <Card.Body>
     <Card.Title>{title}</Card.Title>
     <Card.Text>{body}</Card.Text>
-    <a href={buttonLink} className="btn btn-secondary">{buttonText}</a>
+    <a href={buttonLink} className="btn btn-sm btn-secondary">{buttonText}</a>
   </Card.Body>
 </Card>
 );
