@@ -5,12 +5,12 @@ import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
+import { Link } from 'gatsby';
 import { Background } from '../components/background';
 import { Bar } from '../components/bar';
 import { PriceBox } from '../components/price-box';
 import { SEO } from '../components/seo';
 import { DefaultLayout } from '../layouts/default-layout';
-import { Link } from 'gatsby';
 
 const ExamplePage = () => (
   <DefaultLayout>

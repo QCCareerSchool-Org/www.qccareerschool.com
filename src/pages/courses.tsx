@@ -6,7 +6,7 @@ import Row from 'react-bootstrap/Row';
 
 import { DefaultLayout } from '../layouts/default-layout';
 
-const Courses = () => (
+const CoursesPage = () => (
   <DefaultLayout>
     <Container>
       <Row>
@@ -24,4 +24,4 @@ const Courses = () => (
   </DefaultLayout>
 );
 
-export default Courses;
+export default CoursesPage;

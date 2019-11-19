@@ -9,20 +9,18 @@ import { Background } from '../components/background';
 import { SEO } from '../components/seo';
 import { DefaultLayout } from '../layouts/default-layout';
 
-import MakeupFaculties from '../images/makeup-faculties-applying-eyeliner.jpg';
-import StyleFaculties from '../images/style-faculties-shopping-clothes.jpg';
-import PetFaculties from '../images/pet-faculties-washing-dog.jpg';
-import WellnessFaculties from '../images/writing-wellness-woman-baby.jpg';
-import WritingFaculties from '../images/writing-faculties-woman.jpg';
-import EventFaculties from '../images/event-faculties-table.jpg';
-import DesignFaculties from '../images/design-faculties-modern-living-room.jpg';
-import TravelFaculties from '../images/travel-faculties-woman-hiking.jpg';
 import Emblem from '../images/35-year-emblem.png';
+import DesignFaculties from '../images/design-faculties-modern-living-room.jpg';
+import EventFaculties from '../images/event-faculties-table.jpg';
+import MakeupFaculties from '../images/makeup-faculties-applying-eyeliner.jpg';
+import PetFaculties from '../images/pet-faculties-washing-dog.jpg';
+import StyleFaculties from '../images/style-faculties-shopping-clothes.jpg';
+import TravelFaculties from '../images/travel-faculties-woman-hiking.jpg';
+import WritingFaculties from '../images/writing-faculties-woman.jpg';
+import WellnessFaculties from '../images/writing-wellness-woman-baby.jpg';
 
-
-import { CourseCard } from '../components/course-card';
 import { Bar } from '../components/bar';
-
+import { CourseCard } from '../components/course-card';
 
 const IndexPage = () => (
   <DefaultLayout>
@@ -52,7 +50,6 @@ const IndexPage = () => (
         </Col>
       </Container>
     </section>
-
 
     <section className="text-dark bg-light mt-5">
       <Container>
@@ -151,19 +148,19 @@ const IndexPage = () => (
       <Container className="my-5">
         <Row>
           <Col xs="12" md="4" className="mb-5">
-            <h3 className="mb-3">Full Course<br></br> Catalog</h3>
+            <h3 className="mb-3">Full Course<br /> Catalog</h3>
             <p>View a full list and description of training programs and courses offered by QC Career School</p>
             <Button size="sm" className="caps">Normal Button</Button>
           </Col>
           <Col xs="12" md="4" className="mb-5">
-            <h3 className="mb-3">Admission<br></br> Requirements</h3>
+            <h3 className="mb-3">Admission<br /> Requirements</h3>
             <p>Interested in enrolling with QC Career School? Find out the admissions requirements and enroll here!</p>
-            <Button size="sm" className="caps" mb-4>Normal Button</Button>
+            <Button size="sm" className="caps" mb-4={true}>Normal Button</Button>
           </Col>
           <Col xs="12" md="4" className="mb-5">
-            <h3 className="mb-3">Find<br></br> Professionals</h3>
+            <h3 className="mb-3">Find<br /> Professionals</h3>
             <p>Hire a QC graduate here! Search by profession and location</p>
-            <Button size="sm" className="caps" mb-4>Normal Button</Button>
+            <Button size="sm" className="caps" mb-4={true}>Normal Button</Button>
           </Col>
         </Row>
       </Container>

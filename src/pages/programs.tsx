@@ -1,22 +1,27 @@
-import PropTypes from 'prop-types';
 import React from 'react';
+import Card from 'react-bootstrap/Card';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
 
-import { Footer } from '../components/footer';
-import { Header } from '../components/header';
-import { Index } from './index';
+import { DefaultLayout } from '../layouts/default-layout';
 
-export const DefaultLayout: React.FC = ({ children }) => (
-  <Index>
-    <div className="d-flex flex-column vh-100">
-      <Header className="flex-shrink-0 fixed-top" />
-      <main className="flex-shrink-0">
-        {children}
-      </main>
-      <Footer className="mt-auto" />
-    </div>
-  </Index>
+const ProgramsPage = () => (
+  <DefaultLayout>
+    <Container>
+      <Row>
+        <Col xs="12" md="8" lg="6" className="offset-md-1 mb-4 mb-lg-0">
+          <h1>sjkdhskdjh</h1>
+        </Col>
+        <Col xs="12" md="8" lg="6">sdjkfhsdkjfhM</Col>
+        <Card>
+          <Card.Body>
+            sdfkjdslfkj
+          </Card.Body>
+        </Card>
+      </Row>
+    </Container>
+  </DefaultLayout>
 );
 
-DefaultLayout.propTypes = {
-  children: PropTypes.node.isRequired,
-};
+export default ProgramsPage;
