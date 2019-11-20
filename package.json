@@ -25,20 +25,23 @@
     "gatsby-source-filesystem": "^2.1.33",
     "gatsby-transformer-sharp": "^2.2.23",
     "intersection-observer": "^0.7.0",
+    "js-bbcode-parser": "^3.0.2",
     "node-sass": "^4.12.0",
     "prop-types": "^15.7.2",
+    "query-string": "^6.9.0",
     "react": "^16.10.2",
     "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.10.2",
     "react-helmet": "^5.2.1",
     "react-icons": "^3.7.0",
-    "tslint": "^5.20.0",
+    "tslint": "^5.20.1",
     "tslint-eslint-rules": "^5.4.0",
     "tslint-loader": "^3.5.4",
     "tslint-react": "^4.1.0",
-    "typescript": "^3.6.4"
+    "typescript": "^3.7.2"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.6.0",
     "prettier": "^1.18.2"
   },
   "keywords": [

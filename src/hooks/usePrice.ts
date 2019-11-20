@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
-import { Price } from '../functions';
+import { Price } from '../models/price';
 
 export const usePrice = (courses: Array<string | string[]>, countryCode: string, provinceCode: string | null) => {
   const [ price, setPrice ] = useState<Price[]>([]);
