@@ -6,6 +6,8 @@ import React from 'react';
 
 import { Index } from './index';
 
+import './profile-layout.css';
+
 export const ProfileLayout: React.FC = ({ children }) => (
   <Index>
     {children}
