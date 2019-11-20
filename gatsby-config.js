@@ -24,7 +24,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#000000`,
         display: `minimal-ui`,
-        icon: `src/images/Q.svg`, // This path is relative to the root of the site.
+        icon: `src/images/q.svg`, // This path is relative to the root of the site.
       },
     },
     {
