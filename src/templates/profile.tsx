@@ -3,6 +3,7 @@ import React, { useEffect, useReducer, useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 
+import { Link } from 'gatsby';
 import Col from 'react-bootstrap/Col';
 import { bbCodeParser } from '../bbcode-parser';
 import { ProfileLayout } from '../layouts/profile-layout';
@@ -38,9 +39,9 @@ const profileTemplate: React.FC<Props> = ({ pageContext }) => {
       <Container id="wrapper" className="my-sm-4">
 
         <main>
-          <a href="https://www.qccareerschool.com/">
+          <Link to="/">
             <img id="logo" src="/profile/logo-inverse.svg" alt="QC Career School" />
-          </a>
+          </Link>
           <hr />
 
           <Row>
@@ -67,11 +68,11 @@ const profileTemplate: React.FC<Props> = ({ pageContext }) => {
           <Row className="mt-4">
 
             <Col xs={12} md={4} className="text-center text-md-left mb-4" style={{ overflow: 'hidden' }}>
-              <img className="img-fluid my-2" src="/viewportrait.php?id=27763" alt="Elena Martinez MIMP" />
+              <img className="img-fluid my-2" src={`https://studentcenter.qccareerschool.com/view-portrait.php?id=${profile.id}`} alt="Elena Martinez MIMP" />
               <br />
-              <strong>Keller, TX</strong>
+              <strong>{profile.city}</strong>
               <br />
-              817-501-9277
+              {profile.phoneNumber}
               <br />
               <a href="/cdn-cgi/l/email-protection#89afaab8b8bfb2afaab8b9bdb2afaab8b9b8b2afaab0beb2afaab8b8bdb2afaab8b8bfb2afaab8b8b8b2afaab8b9bbb2afaab0b1b2afaab8b9b8b2afaab0beb2afaab8b8beb2afaab8b8bfb2afaab8bbb8b2afaabfbdb2afaab8bbb8b2afaab8b9b0b2afaab0beb2afaab8b9bcb2afaab8b9b1b2afaabdbfb2afaab0b0b2afaab8b8b8b2afaab8b9b0b2">&#116;&#104;&#101;&#97;&#114;&#116;&#111;&#102;&#98;&#101;&#97;&#117;&#116;&#121;&#64;&#121;&#109;&#97;&#105;&#108;&#46;&#99;&#111;&#109;</a>
               <br />
