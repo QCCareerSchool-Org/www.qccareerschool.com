@@ -13,8 +13,8 @@ exports.createPages = async ({ actions }) => {
   const profileTemplate = path.resolve('./src/templates/profile.tsx');
   const response = await axios.get('https://www.qccareerschool.com/profiles/');
   response.data
-    // .filter((profile, index) => process.env.NODE_ENV === 'production' ? true : index < 100)
-    .filter((profile, index) => index < 100)
+    .filter((profile, index) => process.env.NODE_ENV === 'production' ? true : index < 100)
+    // .filter((profile, index) => index < 1000)
     .forEach(async profile => {
       actions.createPage({
         path: `profiles/${profile.id}`,

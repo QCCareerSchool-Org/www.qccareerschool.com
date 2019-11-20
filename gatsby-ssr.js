@@ -35,8 +35,6 @@ export const onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }) =>
 
       delete el.props['data-href'];
       delete el.props['dangerouslySetInnerHTML'];
-
-      console.log(el);
     }
   });
 }
