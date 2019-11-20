@@ -13,7 +13,7 @@ interface Props {
   pageContext: any;
 }
 
-const profileTemplate: React.FC<Props> = ({ pageContext }) => {
+const ProfileTemplate: React.FC<Props> = ({ pageContext }) => {
 
   const [ profile, setProfile ] = useState<Profile>(pageContext);
 
@@ -114,7 +114,7 @@ const profileTemplate: React.FC<Props> = ({ pageContext }) => {
   );
 };
 
-export default profileTemplate;
+export default ProfileTemplate;
 
 function nl2br(str?: string | null, xhtml?: boolean) {
   if (typeof str === 'undefined' || str === null) {

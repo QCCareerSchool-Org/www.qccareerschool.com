@@ -8,9 +8,10 @@ interface Props {
   lang?: string;
   meta?: HTMLMetaElement[];
   title: string;
+  link?: Array<React.DetailedHTMLProps<React.LinkHTMLAttributes<HTMLLinkElement>, HTMLLinkElement>>;
 }
 
-export const SEO: React.FC<Props> = ({ description = '', lang = 'en', meta = [], title }) => {
+export const SEO: React.FC<Props> = ({ description = '', lang = 'en', meta = [], title, link = [] }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -34,6 +35,7 @@ export const SEO: React.FC<Props> = ({ description = '', lang = 'en', meta = [],
       }}
       title={title}
       titleTemplate={`%s - ${site.siteMetadata.title}`}
+      link={link}
       meta={[
         { name: `description`, content: metaDescription },
         { property: `og:title`, content: title },

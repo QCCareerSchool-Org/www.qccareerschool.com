@@ -1,5 +1,4 @@
-import { navigate } from 'gatsby';
-import React, { useEffect } from 'react';
+import React from 'react';
 
 import { SEO } from '../components/seo';
 import { DefaultLayout } from '../layouts/default-layout';
@@ -8,14 +7,7 @@ interface Props {
   location: string;
 }
 
-const NotFoundPage: React.FC<Props> = ({ location }) => {
-  useEffect(() => {
-    console.log(window?.location);
-    if (window?.location.pathname.startsWith('/profiles/')) {
-      const id = window.location.pathname.split('/')[2];
-      navigate(`/profile?id=${id}`);
-    }
-  }, []);
+const NotFoundPage: React.FC<Props> = () => {
   return (
     <DefaultLayout>
       <SEO title="404: Not found" />
