@@ -7,13 +7,13 @@ const axios = require('axios');
 const path = require('path');
 
 exports.createPages = async ({ actions }) => {
-  if (process.env.MODE !== 'prod') {
-    console.log('WARNING: Set environment variable `mode` equal to "prod" to build all profile pages');
+  if (process.env.NODE_ENV !== 'production') {
+    console.log('WARNING: Set environment variable `NODE_ENV` equal to "production" to build all profile pages');
   }
   const profileTemplate = path.resolve('./src/templates/profile.tsx');
   const response = await axios.get('https://www.qccareerschool.com/profiles/');
   response.data
-    .filter((profile, index) => process.env.MODE === 'prod' ? true : index < 100)
+    .filter((profile, index) => process.env.NODE_ENV === 'production' ? true : index < 100)
     .forEach(async profile => {
       actions.createPage({
         path: `profiles/${profile.id}`,
