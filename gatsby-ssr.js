@@ -3,8 +3,6 @@
  *
  * See: https://www.gatsbyjs.org/docs/ssr-apis/
  */
-
-// You can delete this file if you're not using it
 import React from 'react';
 
 import { ScreenWidthProvider } from './src/providers/screen-width';
@@ -37,6 +35,8 @@ export const onPreRenderHTML = ({ getHeadComponents, replaceHeadComponents }) =>
 
       delete el.props['data-href'];
       delete el.props['dangerouslySetInnerHTML'];
+
+      console.log(el);
     }
   });
 }
