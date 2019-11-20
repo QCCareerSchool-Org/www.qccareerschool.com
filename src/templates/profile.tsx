@@ -47,7 +47,10 @@ const profileTemplate: React.FC<Props> = ({ pageContext }) => {
 
             <Col xs={12} md={6} xl={8} className="text-center text-md-left">
               <h1 id="mainHeader">{getName()}</h1>
-              <h5 className="font-weight-light">Makeup Artist</h5>
+              {profile.professions.length
+                ? <h5 className="font-weight-light">{profile.professions.join(', ')}</h5>
+                : null
+              }
             </Col>
 
             <Col xs={12} md={6} xl={4} className="mt-4 mt-md-0 text-center text-md-right">
