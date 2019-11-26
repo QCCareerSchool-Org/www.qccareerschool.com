@@ -1,26 +1,125 @@
-import { Link } from 'gatsby';
 import React from 'react';
 import Button from 'react-bootstrap/Button';
+import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Corporate from '../images/admissions-corporate.jpg';
+import PrivateGroup from '../images/admissions-private-group.jpg';
+
 import { DefaultLayout } from '../layouts/default-layout';
 
-import { Background } from '../components/background';
+const AdmissionsPage: React.FC = () => {
 
-const AdmissionsPage: React.FC = () => (
-  <DefaultLayout>
-    <Background image="home">
-      <section id="first-section" className="text-light">
-        <Container>
-          <h1>Admissions</h1>
-          <p>Test Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam ipsum eros, lacinia sed dapibus sed, accumsan ut diam. In commodo, nisi eu ullamcorper pretium, eros felis fringilla nunc, quis laoreet urna lectus ut elit. Duis non fringilla justo. Sed quis mauris vitae massa ornare rhoncus sed eu risus. In hac habitasse platea dictumst. In nisl enim, maximus vel felis vitae, dictum efficitur ipsum. In malesuada, lacus malesuada mattis semper, tellus erat ultrices purus, gravida egestas mauris mi eget turpis. Mauris sem orci, porttitor ac nisi sit amet, varius consectetur purus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean nec justo ut eros convallis ornare. Ut tincidunt arcu et congue mattis. Quisque vitae consectetur libero. Sed ac sem gravida, condimentum orci eget, efficitur turpis.</p>
-          <p>Suspendisse potenti. Praesent bibendum pretium neque, quis imperdiet erat hendrerit vitae. Donec maximus ipsum et urna fermentum, nec vulputate odio gravida. Nunc commodo pulvinar ex. Ut non egestas odio. Suspendisse eget elit sollicitudin, pharetra sapien id, mattis velit. In pharetra convallis nibh a mattis. In egestas nunc non libero luctus, in porta erat gravida. Donec ut sodales dui, ut ornare ipsum. Phasellus pretium, urna ac fermentum rhoncus, ante nulla semper orci, eu pulvinar turpis metus rhoncus enim.</p>
-          <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi ut dignissim ligula, a rutrum orci. Suspendisse maximus faucibus luctus. Duis commodo condimentum viverra. Duis et odio mollis, eleifend odio at, lacinia massa. Nam ultrices malesuada lacus ut porttitor. Nam mattis pharetra cursus. Vestibulum imperdiet efficitur dolor sed eleifend. Quisque sodales purus nunc. Donec dignissim pretium interdum. Proin a porta quam, vitae dignissim justo. Morbi et hendrerit erat, luctus elementum erat. Aenean dignissim est eu lorem accumsan, vel commodo justo lobortis. Ut risus quam, finibus quis nibh eu, maximus sodales sapien. Aliquam semper leo ut turpis tristique sodales.</p>
-          <p><Link to="/example">Example</Link></p>
-          <Button size="sm">Sdsds</Button>
-        </Container>
-      </section>
-    </Background>
-  </DefaultLayout>
-);
+  const ColoredLine = ({ color }) => (
+    <hr
+      style={{
+        color,
+        backgroundColor: color,
+        height: 1,
+            }} />
+      );
+
+  const ButtonAlignment = {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      };
+
+  const FooterBackgroundColor = {
+        backgroundColor: '#010037',
+      };
+
+  const FooterTextStyle = {
+        color: 'white',
+        textAlign: 'center',
+      };
+
+  const ImageStyle = {
+        width: 572,
+        height: 381,
+        marginTop: 40,
+        marginBottom: 40,
+      };
+
+  return (
+        <DefaultLayout>
+          <section id="first-section">
+              <Container>
+              <h1>Admissions</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur </p>
+              <br />
+              <br />
+              <br />
+              <br />
+              <h2>Admissions For Individuals</h2>
+                <p>If you would like to enroll in one of QC’s courses, you can do so at the faculties’ online enrollment pages:</p>
+                  <ul>
+                    <li><a href="https://www.qcmakeupacademy.com/" target="_blank" rel="noopener noreferrer">Enroll with QC Makeup Academy</a></li>
+                    <li><a href="https://www.qceventplanning.com/" target="_blank" rel="noopener noreferrer">Enroll with QC Event School</a></li>
+                    <li><a href="https://www.qcdesignschool.com/" target="_blank" rel="noopener noreferrer">Enroll with QC Design School</a></li>
+                    <li><a href="https://www.doggroomingcourse.com/" target="_blank" rel="noopener noreferrer">Enroll with QC Pet Studies</a></li>
+                    <li><a href="https://www.qcwellnessstudies.com/" target="_blank" rel="noopener noreferrer">Enroll with QC Wellness Studies</a></li>
+                    <li><a href="https://www.winghill.com/" target="_blank" rel="noopener noreferrer">Enroll with Winghill School of Writing</a></li>
+                    <li><a href="https://www.qcstyleacademy.com/" target="_blank" rel="noopener noreferrer">Enroll with QC Style Academy</a></li>
+                    <li><a href="https://www.qctravelschool.com/" target="_blank" rel="noopener noreferrer">Enroll with QC Travel School</a></li>
+                  </ul>
+            </Container>
+          </section>
+
+          <ColoredLine color="#F6F7FB" />
+
+          <section>
+              <Container>
+                <Row>
+                    <Col xs={12} md={6}>
+                      <h3>Private Group Admissions & Discounts</h3>
+                        <p>If you would like to enroll with QC along with a friend, colleague or family member, you can take advantage of QC’s group admissions discount! Any group of two or more enrolling in any course (you don’t all have to enroll in the same course!) will receive a 25% discount for each individual enrolling. Simply call the school to enroll; this is only available for phone enrollments.  Note that this discount cannot be combined with other offers or promotions.
+                        </p>
+                          <div style={ButtonAlignment}>
+                            <Button href="/contact" size="lg" variant="secondary">Contact QC</Button>
+                          </div>
+                      </Col>
+                    <Col xs={12} md={6}>
+                      <img src={PrivateGroup} alt="Private Group Discounts" style={ImageStyle} />
+                    </Col>
+                </Row>
+              </Container>
+
+              <ColoredLine color="#F6F7FB" />
+
+              <Container>
+                <Row>
+                  <Col xs={12} md={6}>
+                    <h3>Corporate Admissions</h3>
+                      <p>Over the years QC has worked with corporations to adapt course content, assignments and tuition/billing practices to corporate groups with specific goals for their employees. If you are a member of a corporation looking to train your employees via a QC course, please contact us to speak with a business development representative who will be happy to prepare a proposal that will suit your needs.           </p>
+                        <div style={ButtonAlignment}>
+                          <Button href="/contact" size="lg" variant="secondary">Contact QC</Button>
+                        </div>
+                  </Col>
+                  <Col xs={12} md={6}>
+                    <img src={Corporate} alt="Corporate Admissions" style={ImageStyle} />
+                  </Col>
+                </Row>
+              </Container>
+          </section>
+
+          <section style={FooterBackgroundColor}>
+              <Container>
+                <Row>
+                  <Col>
+                    <h3 style={FooterTextStyle}>Have Questions? We are here to help!</h3>
+                      <p style={FooterTextStyle}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum sagittis augue. Praesent interdum odio a justo tincidunt, at scelerisque urna molestie. Ut euismod venenatis faucibus. Vestibulum auctor sollicitudin faucibus. In hac habitasse platea dictumst. Duis efficitur lectus a nisi tristique, id sollicitudin ex porta. In quis cursus urna. Sed fringilla ipsum vitae massa fermentum accumsan. Morbi a tincidunt justo. Phasellus aliquet at sem non cursus. Fusce risus arcu, imperdiet et iaculis in, vehicula in nulla. Aenean mauris urna, venenatis a egestas in, interdum vel ante. Morbi placerat malesuada malesuada. Duis vel nibh id urna pulvinar dignissim vel et lorem.
+                      </p>
+                      <div style={ButtonAlignment}>
+                        <Button href="/contact" size="lg" variant="secondary">Contact Us</Button>
+                      </div>
+                    </Col>
+                </Row>
+              </Container>
+          </section>
+
+        </DefaultLayout>
+      );
+    };
 
 export default AdmissionsPage;
