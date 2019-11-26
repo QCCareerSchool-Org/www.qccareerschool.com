@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
+import styled from 'styled-components';
 import Corporate from '../images/admissions-corporate.jpg';
 import PrivateGroup from '../images/admissions-private-group.jpg';
 
@@ -19,14 +20,16 @@ const AdmissionsPage: React.FC = () => {
             }} />
       );
 
+  const GradientBackground = styled.div`
+  background: linear-gradient(35deg, #011037, #130820);
+  height: 300px;
+  margin-bottom: -48px;
+  `;
+
   const ButtonAlignment = {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-      };
-
-  const FooterBackgroundColor = {
-        backgroundColor: '#010037',
       };
 
   const FooterTextStyle = {
@@ -103,7 +106,8 @@ const AdmissionsPage: React.FC = () => {
               </Container>
           </section>
 
-          <section style={FooterBackgroundColor}>
+          <section >
+            <GradientBackground>
               <Container>
                 <Row>
                   <Col>
@@ -116,6 +120,7 @@ const AdmissionsPage: React.FC = () => {
                     </Col>
                 </Row>
               </Container>
+            </GradientBackground>
           </section>
 
         </DefaultLayout>
